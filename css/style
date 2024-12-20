@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'seolleimcool-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Zephyr";
+    src: url("../fonts/ZephyrRegular.eot");
+    src: url("../fonts/ZephyrRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ZephyrRegular.woff") format("woff"), url("../fonts/ZephyrRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Pretendard', sans-serif;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fbfbfb;
+}
+
+main {
+    padding: 0 2rem;
+}
+
+.hide{
+    display: none;
+}
+.nav{
+    width: 100%;
+    font-family: 'Zephyr', sans-serif;
+    height: 80px;
+    line-height: 80px;
+    font-size: 25px;
+}
+.fisrt .about_tit .box {
+    overflow: hidden;
+}
+.fisrt .about_tit .box p{
+    font-family: 'Zephyr', sans-serif;
+    font-size: 11vw;
+    text-transform: uppercase;
+    text-align: end;
+    line-height: 10vw;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.fisrt .about_tit p>span{
+    font-family: 'Zephyr', sans-serif;
+    font-size: 5vw;
+    line-height: 0;
+}
+.fisrt .sub_cont{
+    display: flex;
+    gap: 3rem;
+    overflow: hidden;
+}
+.fisrt .sub_cont .txt{
+    padding: 3rem 0 1rem 0;
+    letter-spacing: -0.5px;
+    font-size: 1.4vw;
+    color: #333;
+    line-height: 2vw;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.fisrt .sub_cont .line{
+    width: 1px;
+    height: auto;
+    background-color: #333;
+    transform: rotate(-25deg);
+}
+@keyframes reveal {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
