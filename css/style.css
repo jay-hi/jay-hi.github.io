@@ -36,7 +36,7 @@ body {
 }
 
 main {
-    padding: 0 2rem;
+   
 }
 
 .hide{
@@ -44,10 +44,35 @@ main {
 }
 .nav{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.nav .logo{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    text-align: center;
     font-family: 'Zephyr', sans-serif;
-    height: 80px;
-    line-height: 80px;
-    font-size: 25px;
+    font-size: 22px;
+}
+.nav .logo::after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: transparent url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNy4xLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA4MCA4MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODAgODA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNGRkZGRkY7c3Ryb2tlOiMyMjIyMjI7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik03Ny43LDQxLjRjMC03LTguNC0xMy4xLTIwLjYtMTUuOUM1NC4zLDEzLDQ4LjEsNC4zLDQxLDQuM1MyNy43LDEzLDI0LjksMjUuNUMxMi43LDI4LjQsNC4zLDM0LjQsNC4zLDQxLjQNCgljMCw3LjEsOC41LDEzLjEsMjAuOCwxNmMyLjksMTIsOC45LDIwLjIsMTUuOSwyMC4yczEyLjktOC4yLDE1LjktMjAuMkM2OS4yLDU0LjYsNzcuNyw0OC41LDc3LjcsNDEuNHoiLz4NCjwvc3ZnPg0K) no-repeat 0 0;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    line-height: 60px;
+    left: 0;
+    z-index: -1;
+}
+.fisrt {
+    padding: 0 2rem;
 }
 .fisrt .about_tit .box {
     overflow: hidden;
@@ -78,6 +103,7 @@ main {
     color: #333;
     line-height: 2vw;
     animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    font-weight: 300;
 }
 .fisrt .sub_cont .line{
     width: 1px;
@@ -92,4 +118,9 @@ main {
     100% {
       transform: translateY(0);
     }
-  }
+}
+
+/*second section*/
+.second{
+    background-image: url('../images/second_back.jpg');
+}
