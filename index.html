@@ -5,53 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <!-- <link rel="apple-touch-icon" sizes="57x57" href="/asset/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/asset/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/asset/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/asset/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/asset/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/asset/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/asset/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/asset/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/asset/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/asset/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/asset/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/asset/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/asset/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./asset/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="icon" href="http://eveneul.github.io/portfolio/favicon.ico?v=2" /> -->
+    <meta property="og:image" content="https://jay-hi.github.io/images/sns.png" />
+    <link rel="icon" href="favicon.ico" /> 
+    <title>Jay-Hi</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/pretendard.css">
+    <link rel="stylesheet" href="../css/style/pretendard.css">
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/sap.min.js"></script>
+    <script type="text/javascript" src="../js/ScrollTrigger.min.js"></script>
+
 </head>
+
 <body>
     <div class="wrap">
         <h1 class="hide">타이틀</h1>
         <main>
-            <div class="nav">
-                <div class="logo">01</div>
-            </div>
-            <section class="fisrt">
+            <section class="first">
                 <h2 class="hide">Intro</h2>
-                <div class="about_tit">
-                    <div class="box"><p>portfolio</p></div>
-                    <div class="box"><p>jayseo</p></div>
-                    <div class="box"><p><span>&</span>publisher</p></div>
-                </div>
-                <div class="sub_cont">
-                    <div class="txt">
-                        효율적이며 사용자를 위한 최적의 웹을 지향합니다.<br>
-                        실무 중심의 다양한 경험을 어쩌구 저쩌구<br>
-                        스스로에 대한 성장과 욕심으로 항상 도전하는 퍼블리셔를 꿈꿉니다.
-                    </div>
-                    <div class="line">
+                <div class="cont_wrap">
+                    <div class="container">
+                        <div class="solar_wrap">
+                            <div class="solar_system">
+                                <div class="orbit"></div>
+                                <div class="planet"></div>
+                            </div>
+                        </div>
+                        <div class="about_tit">
+                            <div class="box"><p>portfolio</p></div>
+                            <div class="box"><p>jayseo</p></div>
+                            <div class="box"><p><span>&</span>publisher</p></div>
+                        </div>
+                        <div class="line">
+                            <svg width="100" height="30vh">
+                                <line x1="100" y1="0" x2="0" y2="100%"/>
+                            </svg>
+                        </div>
+                        <div class="sub_cont">
+                            <div class="txt">
+                                효율적이며 사용자를 위한 최적의 웹을 지향합니다.<br>
+                                실무 중심의 다양한 경험을 바탕으로<br>
+                                항상 새롭게 도전하는 퍼블리셔를 꿈꿉니다.
+                            </div>
+                            <!-- <div class="line">
+                            </div> -->
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="second">
+            <section class="second sel">
                 <h2 class="hide">About</h2>
                 <div class="cont_wrap">
                     <div class="container">
@@ -59,8 +60,10 @@
                             <video preload="auto" src="../video/second_back.mp4" poster="" playsinline="" autoplay="" loop="" muted=""></video>
                         </div>
                         <div class="text_wrap">
-                            <p class="text1">About Jay</p>
-                            <p class="text2">Even if it is just a moment of light in the infinite universe</p>
+                            <div class="work_title re">
+                                <span class="back">About Jay</span>
+                                <div class="front01 front_box"><span class="front">About Jay</span></div>
+                            </div>
                         </div>
                         <div class="detail_wrap">
                             <div class="left">
@@ -86,8 +89,8 @@
                                 </div>
                             </div>
                             <div class="line">
-                                <svg width="100" height="auto">
-                                    <line x1="0" y1="0" x2="100" y2="100%"/>
+                                <svg width="7vw" height="auto">
+                                    <line x1="100%" y1="0" x2="0" y2="100%"/>
                                 </svg>
                             </div>
                             <div class="right">
@@ -116,23 +119,145 @@
                     </div>
                 </div>
             </section>
-            <section class="three">
+            <section class="three sel">
                 <h2 class="hide">Work</h2>
                 <div class="cont_wrap">
                     <div class="container">
                         <div class="text_wrap">
-                            <p class="text1">Work</p>
-                            <p class="text2">Web Publisher Work</p>
+                            <div class="work_title">
+                                <span class="back">Work.01</span>
+                                <div class="front02 front_box"><span class="front">Work.01</span></div>
+                            </div>
                         </div>
                         <div class="work_wrap">
-                            <div class="photo">
-                                <img src="../images/work_img01.png">
+                            <div class="box">
+                                <div class="cont">
+                                    <div class="title"><p>고려대학교 지속가능원 리뉴얼 프로젝트 <br class="hide">참여 · 팀원</p></div>
+                                    <div><p>상세 페이지 및 게시판 페이지</p></div>
+                                    <div><p>각종 도표 CSS 표현, chartjs 라이브러리로 그래프를 적용하여 전체적인 반응형 페이지를 구축하였습니다.</p></div>
+                                </div>
+                                <div class="photo" onclick="window.open('https://sustainability.korea.ac.kr/campus/environment.html')">
+                                    <div class="auto_display">
+                                        <div class="group">
+                                            <img src="../images/work_img01.png">
+                                            <img src="../images/work_img02.png">
+                                            <img src="../images/work_img03.png">
+                                        </div>
+                                        <div aria-hidden class="group">
+                                            <img src="../images/work_img01.png">
+                                            <img src="../images/work_img02.png">
+                                            <img src="../images/work_img03.png">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="cont">
-                                <div class="title"><p>고려대학교 지속가능원 리뉴얼 프로젝트 참여</p></div>
-                                <div><p>상세 페이지 및 게시판 페이지</p></div>
-                                <div><p>각종 도표를 CSS로 표현하였고 chartjs 라이브러리를 사용하여 그래프를 구현하여 반응형 작업까지 완료함</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="four sel">
+                <h2 class="hide">Work</h2>
+                <div class="cont_wrap">
+                    <div class="container">
+                        <div class="text_wrap">
+                            <div class="work_title re">
+                                <span class="back">Work.02</span>
+                                <div class="front03 front_box"><span class="front">Work.02</span></div>
                             </div>
+                        </div>
+                        <div class="work_wrap">
+                            <div class="box box2">
+                                <div class="photo" onclick="window.open('https://www.koreanpsychology.or.kr/KPA2024/main/main.html')">
+                                    <div class="auto_display gray">
+                                        <div class="group">
+                                            <img src="../images/work_img04.png">
+                                            <img src="../images/work_img05.png">
+                                            <img src="../images/work_img06.png">
+                                        </div>
+                                        <div aria-hidden class="group">
+                                            <img src="../images/work_img04.png">
+                                            <img src="../images/work_img05.png">
+                                            <img src="../images/work_img06.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <div class="title"><p>한국심리학회 2024 연차학술대회 오픈 프로젝트 참여 · 팀원</p></div>
+                                    <div><p>메인 및 상세 페이지</p></div>
+                                    <div><p>기존 디자인의 통일감을 해치치 않으며 더 많은 내용을 깔끔하게 담기 위해 노력하였습니다.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="five sel">
+                <h2 class="hide">work</h2>
+                <div class="cont_wrap">
+                    <div class="container">
+                        <div class="text_wrap">
+                            <div class="work_title">
+                                <span class="back">Work.03</span>
+                                <div class="front04 front_box"><span class="front">Work.03</span></div>
+                            </div>
+                        </div>
+                        <div class="work_wrap">
+                            <div class="box">
+                                <div class="cont">
+                                    <div class="title"><p>(재)한국문화예술진흥재단 오픈 프로젝트 <br class="hide">참여 · 팀원</p></div>
+                                    <div><p>상세 페이지 및 메인</p></div>
+                                    <div><p>텍스트와 사진 자료가 많은 사이트 특성을 고려하여 가독성에 중점을 두고 작업하였습니다.</p></div>
+                                </div>
+                                <div class="photo" onclick="window.open('https://www.koracf.or.kr/main/main.html')">
+                                    <div class="auto_display">
+                                        <div class="group">
+                                            <img src="../images/work_img07.png">
+                                            <img src="../images/work_img08.png">
+                                            <img src="../images/work_img09.png">
+                                        </div>
+                                        <div aria-hidden class="group">
+                                            <img src="../images/work_img07.png">
+                                            <img src="../images/work_img08.png">
+                                            <img src="../images/work_img09.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five_full">
+                                <div>
+                                    <p>이외 각종 협회와 재단 및 일반 기업, 대학교 등 다양한 고객사 약 <span>130</span> 곳 이상 유지/보수 중</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div><span onclick="alert('가까운 빙스에게 문의해 주세요 ^v^')">Contact</span></div>
+                            <div><span>© 2024. All rights reserved.</span></div>
+                            <div><span>Seo Jay</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="six sel">
+                <h2 class="hide">mobile work</h2>
+                <div class="cont_wrap">
+                    <div class="container">
+                        <div class="work_wrap">
+                            <div class="five_full">
+                                <div>
+                                    <p>이외 각종 협회와 재단 및 일반 기업, 대학교 등<br>다양한 고객사 약 <span>90</span> 곳 이상 유지/보수 중</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont_btn" onclick="alert('가까운 빙스에게 문의해 주세요 ^v^')">Contact</div>
+                        <div class="solar_wrap">
+                            <div class="solar_system">
+                                <div class="orbit2"></div>
+                                <div class="planet2"></div>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div><span>© 2024. All rights reserved.</span></div>
+                            <div><span>Seo Jay</span></div>
                         </div>
                     </div>
                 </div>
@@ -140,3 +265,4 @@
         </main>
     </div>
 </body>
+<script src="../js/portfolio.js"></script>
