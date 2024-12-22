@@ -333,7 +333,7 @@ a, a:hover, a:active {text-decoration: none; outline: none}
     background-image: url('../images/tt2.png');
     background-size: cover;
     padding: 3.5rem 1rem 1.5rem 1rem;
-    cursor: pointer;
+    cursor: url(../images/cursor.png), pointer;
 }
 .work_wrap .box .cont{
     width: 50%;
@@ -832,7 +832,7 @@ a, a:hover, a:active {text-decoration: none; outline: none}
     .five .work_wrap .hide, .three .work_wrap .hide{
         display: block;
     }
-    .six .solar_system .orbit {
+    .six .solar_system .orbit2 {
         height: 15vh;
     }
     .six .five_full {
