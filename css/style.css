@@ -9,7 +9,6 @@
     font-display: swap;
 }
 
-
 *{
     outline: 0;
     margin: 0;
@@ -17,6 +16,14 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-family: 'Pretendard', sans-serif;
     word-break: keep-all;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-touch-callout: none;
 }
 
 body {
@@ -25,8 +32,12 @@ body {
     /* overflow: hidden; */
     background: #fbfbfb;
     overflow-x: hidden;
+    -ms-overflow-style: none;
 }
 a, a:hover, a:active {text-decoration: none; outline: none}
+::-webkit-scrollbar {
+  display: none;
+}
 
 .hide{
     display: none;
@@ -486,8 +497,7 @@ a, a:hover, a:active {text-decoration: none; outline: none}
     font-weight: 300;
     width: 100%;
     color: #333;
-    bottom: 0;
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-size: 1.25rem;
 }
 .five_full p{
@@ -604,6 +614,12 @@ a, a:hover, a:active {text-decoration: none; outline: none}
     border-radius: 50%;
 }
 
+@media (max-width: 1770px) {
+	/*사파리 목업용*/
+	.work_wrap .box .photo {
+	    border-bottom: 0;
+	}
+}
 @media (max-width: 1350px) {
     .second .cont_wrap .container .detail_wrap {
         gap: 0;
@@ -818,6 +834,9 @@ a, a:hover, a:active {text-decoration: none; outline: none}
     .four .work_wrap .box {
         align-items: center;
     }
+    .six .solar_system .orbit2 {
+        height: 15vh;
+    }
 
 }
 @media (max-width: 460px) {
@@ -831,9 +850,6 @@ a, a:hover, a:active {text-decoration: none; outline: none}
     }
     .five .work_wrap .hide, .three .work_wrap .hide{
         display: block;
-    }
-    .six .solar_system .orbit2 {
-        height: 15vh;
     }
     .six .five_full {
         font-size: 5vw;
