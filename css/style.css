@@ -476,6 +476,7 @@ a, a:hover, a:active {text-decoration: none; outline: none}
     .work_01_m, .work_02_m, .work_03_m{
         width: 100%;
         padding: 0 2rem;
+        cursor: pointer;
     }
     .cont_box_m{
         display: flex;
