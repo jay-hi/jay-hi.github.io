@@ -38,14 +38,14 @@ textElements.forEach(text => {
 
 //introduce flow text
 const t3 = gsap.timeline({});
-t3.fromTo('.text_03', {x:'-100%'}, {x: '0',duration: 10,ease: 'circ.out',stagger: 0.5,delay:2})
+t3.fromTo('.text_03', {x:'-100%'}, {x: '0',duration: 10,ease: 'circ.out',stagger: 0.5})
 .fromTo('.text_02', {x:'100%'}, {x: '0',duration: 10,ease: 'circ.out',stagger: 0.5},'<')
 .fromTo('.text_01', {x:'-100%'}, {x: '0',duration: 10,ease: 'circ.out',stagger: 0.5},'<')
 
 ScrollTrigger.create({
     trigger:'.info_title',
     start: 'top 20%',
-    end:'bottom bottom',
+    end:'top 60%',
     scrub: 10,
     animation: t3,
     
