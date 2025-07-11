@@ -1,17 +1,17 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-let panels = gsap.utils.toArray(".sel");
+// let panels = gsap.utils.toArray(".sel");
 
-panels.forEach((panel, i) => {
-    ScrollTrigger.create({
-        trigger: panel,
-        start: "top top",
-        pin: true, 
-        scrub: 0.5,
-        pinSpacing: false 
-    });
-});
+// panels.forEach((panel, i) => {
+//     ScrollTrigger.create({
+//         trigger: panel,
+//         start: "top top",
+//         pin: true, 
+//         scrub: 0.5,
+//         pinSpacing: false 
+//     });
+// });
     
 
 //intro
@@ -111,7 +111,7 @@ document.querySelector('.work_03').addEventListener("mouseleave", function () {
     work_c.reverse();
 });
 
-const text = "2024 Portfolio of Jay"; // 타이핑 문구
+const text = "Portfolio of Jay"; // 타이핑 문구
 const ttt = 0;
 let index = 0;
 let speed = 120; // 속도 
